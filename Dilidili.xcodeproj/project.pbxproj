@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80CBDBF2DF972AE3D64C16B6 /* Pods_Dilidili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1D97CE9FC4B090203C6C4C /* Pods_Dilidili.framework */; };
 		A1E122131E542A3700599474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E122121E542A3700599474 /* main.m */; };
 		A1E122191E542A3700599474 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E122181E542A3700599474 /* ViewController.m */; };
 		A1E1221C1E542A3700599474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E1221A1E542A3700599474 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75F4CA12D39508360D07A240 /* Pods-Dilidili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dilidili.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dilidili/Pods-Dilidili.release.xcconfig"; sourceTree = "<group>"; };
+		7C7FBB0B65A053D6ACB09244 /* Pods-Dilidili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dilidili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dilidili/Pods-Dilidili.debug.xcconfig"; sourceTree = "<group>"; };
 		A1E1220E1E542A3700599474 /* Dilidili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dilidili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E122121E542A3700599474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1E122171E542A3700599474 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		A1E1222D1E542B0E00599474 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1E1222E1E542B0E00599474 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A1E122311E542BC200599474 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BA1D97CE9FC4B090203C6C4C /* Pods_Dilidili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dilidili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CBDBF2DF972AE3D64C16B6 /* Pods_Dilidili.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15E3BE5EE5FA980BDC0EBA42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA1D97CE9FC4B090203C6C4C /* Pods_Dilidili.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B02A4D48F943873429BD4BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C7FBB0B65A053D6ACB09244 /* Pods-Dilidili.debug.xcconfig */,
+				75F4CA12D39508360D07A240 /* Pods-Dilidili.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A1E122051E542A3700599474 = {
 			isa = PBXGroup;
 			children = (
 				A1E122101E542A3700599474 /* Dilidili */,
 				A1E1220F1E542A3700599474 /* Products */,
+				3B02A4D48F943873429BD4BC /* Pods */,
+				15E3BE5EE5FA980BDC0EBA42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1E122251E542A3700599474 /* Build configuration list for PBXNativeTarget "Dilidili" */;
 			buildPhases = (
+				D10EBCF61F2B50AEE86B13B8 /* [CP] Check Pods Manifest.lock */,
 				A1E1220A1E542A3700599474 /* Sources */,
 				A1E1220B1E542A3700599474 /* Frameworks */,
 				A1E1220C1E542A3700599474 /* Resources */,
+				09E1EF25A173E92181093239 /* [CP] Embed Pods Frameworks */,
+				38E1BAC1EDC6632F5EAE70B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09E1EF25A173E92181093239 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dilidili/Pods-Dilidili-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38E1BAC1EDC6632F5EAE70B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dilidili/Pods-Dilidili-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D10EBCF61F2B50AEE86B13B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1E1220A1E542A3700599474 /* Sources */ = {
@@ -315,6 +390,7 @@
 		};
 		A1E122261E542A3700599474 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C7FBB0B65A053D6ACB09244 /* Pods-Dilidili.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Dilidili/Source/General(通用类)/PrefixHeader.pch";
@@ -327,6 +403,7 @@
 		};
 		A1E122271E542A3700599474 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75F4CA12D39508360D07A240 /* Pods-Dilidili.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Dilidili/Source/General(通用类)/PrefixHeader.pch";
